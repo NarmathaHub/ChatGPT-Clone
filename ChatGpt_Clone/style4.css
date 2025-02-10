@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#5F9EA0;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    width: 20%;
+    background-color: #5F9EA0;
+    display: flex;
+    flex-direction: column;
+}
+.left-nav {
+    padding: 20px;
+    border-bottom: 1px solid #2b2b2b; /* Divider between nav and history */
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon img {
+    width: 24px; 
+    height: 24px;
+    cursor: pointer; /* Pointer on hover for interactivity */
+  }
+  .history {
+    padding: 20px;
+    overflow-y:auto; /* Allows vertical scrolling */
+    height: 100%; /* Occupies full height below the navigation */
+  }
+  .history-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition on hover */
+  }
+   /* Hover effect for history items */
+   .history-item:hover {
+    background-color:#2b2b2b;
+  }
+  /* Icons inside history items */
+  .history-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .today,.Yesterday {
+    color: #171717;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .right {
+    width: 80%; /* Takes 80% of the width */
+    display: flex;
+    flex-direction: column;
+    background-color: #212121; /* Matches the main background */
+  }
+  .right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #2b2b2b; /* Divider line */
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  .chatgpt-btn {
+    background-color:#fff;
+    color:#fff;
+    border:0px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .user-icon i {
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .middle {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+  }
+  .logo img {
+    width:70px;
+    margin-bottom: 40px;
+  }
+  .fourBox {
+    display: flex;
+    gap: 20px; /* Space between boxes */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+    padding: 15px;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    border: #333 1px solid;
+    transition: background 0.3s ease; 
+    box-shadow: 10px;
+  } 
+  .box i {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .box1 i {
+    color: #76D0EB; /* Light blue */
+  }
+  .box2 i {
+    color: #EC6262; /* Red */
+  }
+  .box3 i {
+    color: #E2C541; /* Yellow */
+  }
+  .box4 i {
+    color: #CB8BD0; /* Purple */
+  }
+  .box p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+  }
+  .box:hover {
+    background-color: #444;
+  }
+  .bottom {
+    display: flex;
+    justify-content: center; 
+    padding: 10px 20px;
+    border-top: 1px solid #2b2b2b; /* Divider line */
+    margin-bottom: 10px;
+  }
+  .search_container {
+    width: 65%;
+    display: flex;
+    align-items:center;
+    background-color: #3a3a3a;
+    padding:12px;
+    border-radius: 50px;
+  }
+  
+  /* Common style for search and send icons */
+  .search-icon,
+  .send-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .send-icon {
+    background-color: #676767;
+    padding: 6px;
+    border-radius: 50%;
+  }
+  
+  /* Icons inside the search and send buttons */
+  .search-icon img,
+  .send-icon img {
+    width: 20px; 
+    height: 20px; 
+  }
+  .search-icon img,
+  .send-icon img:hover{
+    background-color: #444;
+    border-radius: none;
+  }
+  
+  .search-input {
+    flex: 1; /* Takes available space */
+    margin: 0 10px;
+  }
+  
+  /* Styling the input field for typing messages */
+  .search-input input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color:transparent;
+    color: #fff;
+    outline: none; /* Removes default outline */
+  }
